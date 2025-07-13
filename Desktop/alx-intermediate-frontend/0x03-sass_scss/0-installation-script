@@ -1,0 +1,13 @@
+# Step 1: Created the project directory
+mkdir 0x03-sass_scss
+cd 0x03-sass_scss
+
+# Step 2 (Optional): Installed Node.js v20.16 using NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+exit and reopen terminal
+nvm install 20.16.0
+nvm use 20.16.0
+
+# Step 3: Installed SASS version 3.7.4
+npm install sass@3.7.4
+

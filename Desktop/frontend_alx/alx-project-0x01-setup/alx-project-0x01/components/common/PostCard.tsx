@@ -1,10 +1,15 @@
 import React from 'react';
 
-const PostCard: React.FC = () => {
+interface PostCardProps {
+  title: string;
+  excerpt: string;
+}
+
+const PostCard: React.FC<PostCardProps> = ({ title, excerpt }) => {
   return (
-    <div className="border p-4 rounded shadow">
-      <h2 className="text-lg font-bold">Post Title</h2>
-      <p>This is a post description.</p>
+    <div className="border rounded p-4 shadow-sm">
+      <h2 className="text-xl font-bold">{title}</h2>
+      <p>{excerpt}</p>
     </div>
   );
 };
